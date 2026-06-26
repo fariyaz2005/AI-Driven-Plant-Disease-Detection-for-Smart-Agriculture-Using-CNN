@@ -1,57 +1,122 @@
-# Plant-Disease-Recognition-System
-Plant Disease Recognition System
+# AI-Driven Plant Disease Detection for Smart Agriculture Using CNN
 
-# Model Setup Instructions
+AI-Driven Plant Disease Detection for Smart Agriculture Using CNN is a deep learning-based web application that identifies plant diseases from leaf images using Convolutional Neural Networks (CNN). The system helps farmers and agricultural researchers detect plant diseases at an early stage, improving crop health and productivity.
 
-To use this project, you need to download a pre-trained model from the given Google Drive link and place it in the `models` directory. Follow the steps below to set it up correctly:
+## Project Overview
 
-## Steps to Download and Place the Model
+Plant diseases significantly affect agricultural production and crop quality. Traditional disease diagnosis requires expert knowledge and manual inspection, which can be time-consuming and costly. This project uses Deep Learning and Computer Vision techniques to automatically classify plant diseases from leaf images and provide quick prediction results through a web application.
 
-1. **Download the Model**
-   - Click [here](https://drive.google.com/file/d/1Ond7UzrNOfdAXWedjlZr2sDXYU6MRBuj/view?usp=sharing) to open the Google Drive link.
-   - Click the **Download** button to save the file to your local system.
+## Features
 
-2. **Create the Models Folder**
-   - Navigate to the root directory of this project.
-   - Create a folder named `models` if it does not already exist.
-     ```bash
-     mkdir models
-     ```
+* Plant leaf disease prediction using CNN.
+* User-friendly web interface.
+* Image upload functionality.
+* Real-time disease prediction.
+* Deep learning-based classification.
+* Fast and accurate results.
 
-3. **Place the Model in the Folder**
-   - Move the downloaded file into the `models` directory.
-     ```bash
-     mv /path/to/downloaded/model models/
-     ```
-     Replace `/path/to/downloaded/model` with the actual path where you downloaded the file.
+## Technologies Used
 
-4. **Verify the Setup**
-   - Ensure that the model file is correctly placed in the `models` directory by listing the folder's contents:
-     ```bash
-     ls models
-     ```
-     You should see the downloaded model file in the output.
+* Python
+* TensorFlow
+* Keras
+* Flask
+* NumPy
+* Pandas
+* Matplotlib
+* HTML
+* CSS
+* Bootstrap
 
-## Usage
+## Project Structure
 
-1. **Specify the Model File Location**
-   - Open the `app.py` file in a text editor.
-   - Locate line 8, which contains the following code:
-     ```python
-     tf.keras.models.load_model("")
-     ```
-   - Update the empty string with the relative path to the model file. For example:
-     ```python
-     tf.keras.models.load_model("models/your_model_file.keras")
-     ```
-     Replace `your_model_file.keras` with the actual name of the model file you downloaded.
+```text
+├── app.py
+├── Plant_Disease_Model_Training.ipynb
+├── plant_disease.json
+├── models/
+├── static/
+├── templates/
+├── uploadimages/
+└── README.md
+```
 
-2. **Run the Server**
-   - Open a terminal and navigate to the root directory of this project.
-   - Run the following command to start the server:
-     ```bash
-     python app.py
-     ```
+## Model Information
 
-3. **Access the Application**
-   - Once the server is running, follow the instructions displayed in the terminal to access the application in your web browser.
+The trained CNN model file is not included in this repository because it exceeds GitHub's file size limit.
+
+Download the model from the following Google Drive link:
+
+https://drive.google.com/file/d/1Ond7UzrNOfdAXWedjlZr2sDXYU6MRBuj/view?usp=sharing
+
+Place the downloaded model file inside the `models` folder:
+
+```text
+models/
+└── plant_disease_recog_model_pwp.keras
+```
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/fariyaz2005/AI-Driven-Plant-Disease-Detection-for-Smart-Agriculture-Using-CNN.git
+
+cd AI-Driven-Plant-Disease-Detection-for-Smart-Agriculture-Using-CNN
+```
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application:
+
+```bash
+python app.py
+```
+
+Open your browser and visit:
+
+```text
+http://127.0.0.1:5000
+```
+
+## Project Workflow
+
+1. Upload a plant leaf image.
+2. Preprocess the image.
+3. Pass the image to the CNN model.
+4. Predict the disease class.
+5. Display the prediction result.
+
+## Applications
+
+* Smart Agriculture
+* Precision Farming
+* Crop Disease Monitoring
+* Agricultural Research
+* Farmer Assistance Systems
+
+## Future Improvements
+
+* Mobile application integration.
+* Real-time camera-based detection.
+* Cloud deployment.
+* Support for additional crop diseases.
+
+## Author
+
+**Md Fariyaz Rahaman**
+B.Tech in Computer Science and Engineering
+Aliah University
+
+GitHub: https://github.com/fariyaz2005
+Email: [fariyazrohaman8989@gmail.com](mailto:fariyazrohaman8989@gmail.com)
+
+## License
+
+This project is developed for educational and research purposes.
+
